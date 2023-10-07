@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".timezone">
+
+
+    <TextClock
+        android:id="@+id/my_clock"
+        android:layout_width="300dp"
+        android:layout_height="73dp"
+        android:format12Hour="h:mm:ss a"
+        android:textColor="#DD9B16"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <ImageButton
+        android:id="@+id/vietnam_button"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="508dp"
+        android:onClick="onClickVietNam"
+        android:src="@drawable/vietnam_flag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/us_button"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="508dp"
+        android:onClick="onClickUS"
+        android:src="@drawable/us_flag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/vietnam_button" />
+
+    <ImageButton
+        android:id="@+id/uk_button"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="508dp"
+        android:onClick="onClickUK"
+        android:src="@drawable/uk_flag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/us_button" />
+
+    <ImageButton
+        android:id="@+id/jp_button"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="508dp"
+        android:onClick="onClickJP"
+        android:src="@drawable/japan_flag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uk_button" />
+
+    <ImageView
+        android:id="@+id/vn_map"
+        android:layout_width="401dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/vn_map"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/us_map"
+        android:layout_width="401dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/us_map"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/uk_map"
+        android:layout_width="401dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/uk_map"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/jp_map"
+        android:layout_width="401dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/jp_map"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

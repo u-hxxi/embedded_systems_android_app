@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#032552"
+    tools:context=".humid">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/humid"
+        android:textColor="#FF9800"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/humid_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="190dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/low_humid"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/dry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="430dp"
+        android:text="@string/dry"
+        android:textColor="#03C598"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/dry_iv"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/humid_dry_iv"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="130dp"
+        android:visibility="invisible"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/humid_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="190dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mid_humid"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="350dp"
+        android:text="@string/good"
+        android:textColor="#C52BB5"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/good_iv"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/humid_good_iv"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="130dp"
+        android:visibility="invisible"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/humid_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="190dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/high_humid"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/wet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/wet"
+        android:textColor="#CC561F"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/wet_iv"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/humid_wet_iv"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"
+        android:visibility="invisible"/>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IoTProject</string>
+    <string name="start">START</string>
+    <string name="time_VN">Time in Viet Nam</string>
+    <string name="temp">TEMPERATURE</string>
+    <string name="c_temp">°C</string>
+    <string name="f_temp">°F</string>
+    <string name="c100">100</string>
+    <string name="c50">50</string>
+    <string name="c0">0</string>
+    <string name="c30">-30</string>
+    <string name="f22">-22</string>
+    <string name="f212">212</string>
+    <string name="f32">32</string>
+    <string name="f122">122</string>
+    <string name="humid">HUMIDITY</string>
+    <string name="good">GOOD</string>
+    <string name="dry">DRY</string>
+    <string name="wet">WET</string>
+</resources>
